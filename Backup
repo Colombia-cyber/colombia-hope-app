@@ -1,0 +1,41 @@
+# Nuestro Pulso App
+
+A civic engagement platform for Colombia.
+
+## Features
+- Chat
+- News
+- Surveys
+- Community
+- Admin
+
+## How to Run
+
+1. Install dependencies:
+    ```
+    npm install
+    ```
+2. Start development server:
+    ```
+    npm run dev
+    ```
+
+## How to Deploy (Vercel)
+- Build command: `vite build`
+- Output directory: `dist`
+- Connect your GitHub repo to Vercel
+
+## Folder Structure
+
+```text
+src/
+  components/
+  pages/
+  features/
+    chat/
+    news/
+    survey/
+    community/
+    admin/
+public/
+```
