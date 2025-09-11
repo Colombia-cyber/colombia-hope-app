@@ -1,0 +1,1 @@
+// Global app context (user, theme)

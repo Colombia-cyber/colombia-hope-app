@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { auth } from "../firebase";
-import { signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { signInWithEmailAndPassword, signOut, User } from "firebase/auth";
 
 export default function AuthStatus() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState<User | null>(null);
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [error, setError] = useState("");
@@ -20,7 +20,7 @@ export default function AuthStatus() {
       setEmail("");
       setPass("");
     } catch (err) {
-      setError(err.message);
+      setError(err instanceof Error ? err.message : 'An error occurred');
     }
   };
 
