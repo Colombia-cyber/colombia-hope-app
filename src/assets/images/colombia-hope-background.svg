@@ -1,0 +1,86 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky gradient background -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#ADD8E6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0F8FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="hillsGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#228B22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#006400;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky background -->
+  <rect width="1920" height="1080" fill="url(#skyGradient)"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="300" cy="150" rx="80" ry="30" fill="white" opacity="0.8"/>
+  <ellipse cx="280" cy="140" rx="60" ry="25" fill="white" opacity="0.8"/>
+  <ellipse cx="320" cy="140" rx="60" ry="25" fill="white" opacity="0.8"/>
+  
+  <ellipse cx="1400" cy="200" rx="100" ry="40" fill="white" opacity="0.7"/>
+  <ellipse cx="1380" cy="180" rx="70" ry="30" fill="white" opacity="0.7"/>
+  <ellipse cx="1420" cy="180" rx="70" ry="30" fill="white" opacity="0.7"/>
+  
+  <!-- Hills in background -->
+  <path d="M 0 600 Q 200 500 400 550 Q 600 480 800 520 Q 1000 460 1200 500 Q 1400 440 1600 480 Q 1800 420 1920 460 L 1920 1080 L 0 1080 Z" fill="url(#hillsGradient)" opacity="0.8"/>
+  
+  <!-- City skyline -->
+  <rect x="1200" y="500" width="40" height="200" fill="#4682B4" opacity="0.6"/>
+  <rect x="1250" y="450" width="35" height="250" fill="#4682B4" opacity="0.6"/>
+  <rect x="1290" y="480" width="45" height="220" fill="#4682B4" opacity="0.6"/>
+  <rect x="1340" y="420" width="30" height="280" fill="#4682B4" opacity="0.6"/>
+  <rect x="1375" y="460" width="40" height="240" fill="#4682B4" opacity="0.6"/>
+  <rect x="1420" y="440" width="35" height="260" fill="#4682B4" opacity="0.6"/>
+  
+  <!-- Colombian flag pole -->
+  <rect x="600" y="300" width="8" height="400" fill="#8B4513"/>
+  
+  <!-- Colombian flag (waving effect with path) -->
+  <path d="M 608 300 Q 650 290 700 300 Q 750 310 800 300 L 800 340 Q 750 350 700 340 Q 650 330 608 340 Z" fill="#FFDE00"/>
+  <path d="M 608 340 Q 650 330 700 340 Q 750 350 800 340 L 800 360 Q 750 370 700 360 Q 650 350 608 360 Z" fill="#0033A0"/>
+  <path d="M 608 360 Q 650 350 700 360 Q 750 370 800 360 L 800 380 Q 750 390 700 380 Q 650 370 608 380 Z" fill="#CE1126"/>
+  
+  <!-- Eagle soaring -->
+  <g transform="translate(750,200) scale(2)">
+    <path d="M 0 0 C -5 -2 -8 0 -10 3 C -8 5 -5 6 0 4 C 5 6 8 5 10 3 C 8 0 5 -2 0 0 Z" fill="#8B4513"/>
+    <path d="M -8 2 C -12 0 -15 2 -12 5 C -10 3 -8 2 -8 2 Z" fill="#654321"/>
+    <path d="M 8 2 C 12 0 15 2 12 5 C 10 3 8 2 8 2 Z" fill="#654321"/>
+  </g>
+  
+  <!-- "Futuro" text -->
+  <text x="650" y="850" font-family="serif" font-size="72" font-style="italic" fill="#2F4F4F" opacity="0.8">Futuro</text>
+  
+  <!-- Group of citizens (simplified silhouettes) -->
+  <g transform="translate(200,750)">
+    <!-- Person 1 pointing up -->
+    <circle cx="0" cy="0" r="15" fill="#2F4F4F"/>
+    <rect x="-10" y="15" width="20" height="40" fill="#2F4F4F"/>
+    <rect x="-8" y="55" width="16" height="30" fill="#2F4F4F"/>
+    <line x1="10" y1="25" x2="25" y2="10" stroke="#2F4F4F" stroke-width="4"/>
+    
+    <!-- Person 2 -->
+    <circle cx="50" cy="0" r="15" fill="#2F4F4F"/>
+    <rect x="40" y="15" width="20" height="40" fill="#2F4F4F"/>
+    <rect x="42" y="55" width="16" height="30" fill="#2F4F4F"/>
+    <line x1="60" y1="25" x2="75" y2="10" stroke="#2F4F4F" stroke-width="4"/>
+    
+    <!-- Person 3 -->
+    <circle cx="100" cy="0" r="15" fill="#2F4F4F"/>
+    <rect x="90" y="15" width="20" height="40" fill="#2F4F4F"/>
+    <rect x="92" y="55" width="16" height="30" fill="#2F4F4F"/>
+    <line x1="110" y1="25" x2="125" y2="15" stroke="#2F4F4F" stroke-width="4"/>
+    
+    <!-- Person 4 -->
+    <circle cx="150" cy="5" r="15" fill="#2F4F4F"/>
+    <rect x="140" y="20" width="20" height="40" fill="#2F4F4F"/>
+    <rect x="142" y="60" width="16" height="30" fill="#2F4F4F"/>
+    <line x1="160" y1="30" x2="175" y2="15" stroke="#2F4F4F" stroke-width="4"/>
+  </g>
+  
+  <!-- Large open area for text overlay (subtle indicator) -->
+  <rect x="1000" y="100" width="800" height="400" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-dasharray="10,5" opacity="0.3"/>
+  <text x="1400" y="320" font-family="sans-serif" font-size="24" fill="rgba(255,255,255,0.5)" text-anchor="middle">Text Overlay Area</text>
+</svg>
