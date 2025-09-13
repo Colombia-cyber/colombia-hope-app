@@ -59,7 +59,25 @@ function Hero() {
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Participa en la Democracia Digital
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-6">
+            <Link
+              to="/social"
+              className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
+            >
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">👥</div>
+              <h3 className="text-xl font-semibold mb-2 text-purple-800">Red Social</h3>
+              <p className="text-gray-600">Conecta con ciudadanos y comparte ideas sobre Colombia</p>
+            </Link>
+
+            <Link
+              to="/friends"
+              className="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
+            >
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">🤝</div>
+              <h3 className="text-xl font-semibold mb-2 text-pink-800">Amigos</h3>
+              <p className="text-gray-600">Encuentra y conecta con personas afines a tus ideas</p>
+            </Link>
+
             <Link
               to="/chat"
               className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
@@ -80,10 +98,10 @@ function Hero() {
             
             <Link
               to="/debate"
-              className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
+              className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
             >
               <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">⚖️</div>
-              <h3 className="text-xl font-semibold mb-2 text-purple-800">Seguimiento Legislativo</h3>
+              <h3 className="text-xl font-semibold mb-2 text-red-800">Seguimiento Legislativo</h3>
               <p className="text-gray-600">Participa en debates sobre propuestas y leyes importantes</p>
             </Link>
             
