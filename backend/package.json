@@ -1,0 +1,33 @@
+{
+  "name": "colombia-hope-backend",
+  "version": "1.0.0",
+  "description": "Backend for Colombia Hope social-civic platform",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "@prisma/client": "^5.3.1",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.10.0",
+    "express-validator": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "prisma": "^5.3.1"
+  },
+  "keywords": ["civic", "social", "platform", "colombia"],
+  "author": "Colombia Hope Team",
+  "license": "MIT"
+}
