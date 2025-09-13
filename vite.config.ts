@@ -3,5 +3,14 @@ import react from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/colombia-hope-app/"
+  base: "/colombia-hope-app/",
+  build: {
+    // Optimize for static hosting
+    assetsInlineLimit: 4096,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 });
